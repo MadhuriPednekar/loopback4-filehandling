@@ -7,3 +7,4 @@ This application helps to understand how to accept multipart/form-data when crea
 - `http://localhost:3000/file/upload` : this API accepts file as an input and provides file content as output
     
 - `http://localhost:3000/file/upload/externalApi` : this API accepts file as an input; uploads the file to another rest api and returns the response
+ 
