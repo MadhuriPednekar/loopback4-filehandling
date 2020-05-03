@@ -1,0 +1,27 @@
+{
+	"name": "FileUpload",
+	"connector": "rest",
+	"crud": false,
+	"options": {
+		"headers": {
+			"accept": "application/json",
+			"content-type": "multipart/form-data"
+		}
+	},
+	"operations": [
+		{
+			"template": {
+				"method": "POST",
+				"url": "http://localhost:3000/file/upload",
+				"options": {
+					"formData": {
+						"file": "{file}"
+					}
+				}
+			},
+			"functions": {
+				"uploadFile": [ "file" ]
+			}
+		}
+	]
+}
